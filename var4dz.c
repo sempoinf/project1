@@ -11,9 +11,13 @@ int main(void)
     
    
     
-    char s2[10];
-
-    scanf("%d", &c1);
+    
+printf("Введите значения: ");
+        while (  scanf("%d",&c1) == 0 ) {
+            printf("Неверное полученное значения, попробуйте еще: ");
+                while(getchar()!='\n'); // Чистим буфер
+        }
+     char s2[10];
     char d;
     while (((d = getchar()) == ' ') || (d == '|'));
 
